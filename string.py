@@ -110,3 +110,133 @@ formatted_string = "My name is {} and I am {} years old.".format(name, age)
 print(formatted_string)
 
 
+# 1. String Formatting
+# A. Old-Style Formatting (%)
+# Ye purana tareeka hai jisme hum % operator ka use karte hain.
+name = "Ramesh"
+age = 25
+formatted_string = "My name is %s and I am %d years old." % (name, age)
+print(formatted_string)
+
+# B. str.format() Method
+name = "Ramesh"
+age = 25
+formatted_string = "My name is {} and I am {} years old.".format(name, age)
+print(formatted_string)
+
+# C. f-Strings (Python 3.6+)
+name = "Ramesh"
+age = 25
+formatted_string = f"My name is {name} and I am {age} years old."
+print(formatted_string)
+
+
+
+#2. Escape Characters
+
+# 1. \n
+
+text = "Hello, \nWorld!"
+print(text)  # Output: Hello, \nWorld!
+
+# 2. \t
+
+text = "Hello, \tWorld!"
+print(text)  # Output: Hello,     World!
+
+# 3. \r
+
+text = "Hello, \rWorld!"
+print(text)  # Output: Hello, World!
+
+# 4. \b
+
+text = "Hello, \bWorld!"
+print(text)  # Output: Hello, World!
+
+# 5. \f
+
+text = "Hello, \fWorld!"
+print(text)  # Output: Hello, World!
+
+# 6. \a
+
+text = "Hello, \aWorld!"
+print(text)  # Output: Hello, World!
+
+# 7. \v
+
+text = "Hello, \vWorld!"
+print(text)  # Output: Hello, World!
+
+# 8. \ooo
+
+text = "Hello, \oooWorld!"
+print(text)  # Output: Hello, World!
+
+# 9. \xhh
+
+text = "Hello, \xhhWorld!"
+
+# String Membership Operators (in aur not in)
+
+text = "Hello, World!"
+print("World" in text)  # Output: True
+print("Python" not in text)  # Output: True
+
+
+
+# String Comparisons
+# 1. Equal to (==)
+
+text1 = "Hello, World!"
+text2 = "Hello, World!"
+print(text1 == text2)  # Output: True
+
+# 2. Not equal to (!=)  
+
+text1 = "Hello, World!"
+text2 = "Hello, Python!"
+print(text1!= text2)  # Output: True
+
+# 3. Greater than (>)
+
+text1 = "Hello, World!"
+text2 = "Hello, Python!"
+print(text1 > text2)  # Output: True
+
+# 4. Less than (<)
+
+text1 = "Hello, World!"
+text2 = "Hello, Python!"
+print(text1 < text2)  # Output: True
+
+
+
+# 5. Greater than or equal to (>=)
+
+text1 = "Hello, World!"
+text2 = "Hello, World!"
+print(text1 >= text2)  # Output: True
+
+# 6. Less than or equal to (<=)
+
+text1 = "Hello, World!"
+text2 = "Hello, World!"
+print(text1 <= text2)  # Output: True
+
+# String Concatenation (+)
+
+text1 = "Hello, "
+text2 = "World!"
+text3 = text1 + text2
+print(text3)  # Output: Hello, World! 
+
+# String Multiplication (*)
+
+text = "Hello, " * 3
+print(text)  # Output: Hello, Hello, Hello,
+
+
+# String Methods
+ # type: ignore

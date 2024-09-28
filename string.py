@@ -238,5 +238,27 @@ text = "Hello, " * 3
 print(text)  # Output: Hello, Hello, Hello,
 
 
-# String Methods
+# 5. Checking if a String Starts or Ends with a Specific Substring
+
+text = "Hello, World!"
+print(text.startswith("Hello"))  # Output: True
+print(text.endswith("World!"))  # Output: True
+
+
+#7. Reversing a String
+
+text = "Hello, World!"
+reversed_text = text[::-1]
+print(reversed_text)  # Output: !dlroW ,olleH
+
+
+# Check if String is Digit, Alphabet, or Alphanumeric
+
+text = "123"
+print(text.isdigit())  # Output: True
+text = "Hello"
+print(text.isalpha())  # Output: True
+text = "Hello123"
+print(text.isalnum())  # Output: True
+
  # type: ignore

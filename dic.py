@@ -113,3 +113,182 @@ if "name" in data and "John" in data.values():
     print("Key 'name' and value 'John' exist!")
 
 
+# 2. Dictionary Comprehension
+# Dictionary Comprehension is a concise and powerful way to create dictionaries from lists.
+numbers = [1, 2, 3, 4, 5]
+square = {num: num**2 for num in numbers}
+print(square)
+
+# 3. Merging Dictionaries Using | Operator - Python 3.9+
+a = {1, 2, 3}
+b = {4, 5, 6}
+c = a | b
+print(c)  # Output: {1, 2, 3, 4, 5, 6}  
+
+# 4. Merging Dictionaries Using update() Method
+a = {1, 2, 3}
+b = {4, 5, 6}
+a.update(b)
+print(a)  # Output: {1, 2, 3, 4, 5, 6}
+
+# 5. Nested Dictionaries
+
+data = {
+    "name": "John",
+    "age": 21,
+    "address": {
+        "street": "Main Street",
+        "city": "New York",
+        "country": "USA"
+    }
+}
+
+print(data["address"]["city"])  # Output: New York
+
+# 6. Dictionary with Default Values
+data = {
+    "name": "John",
+    "age": 21
+}
+
+print(data.setdefault("city", "New York"))  # Output: New York  
+
+# 7. Dictionary with Multiple Data Types
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": 1234567890
+}
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': 1234567890}
+
+# 8. Dictionary with Duplicate Keys
+data = {
+    "name": "John",
+    "age": 21,
+    "name": "Jane"
+}
+
+print(data)  # Output: {'name': 'Jane', 'age': 21}
+
+# 9. Dictionary with Empty Values
+data = {
+    "name": "John",
+    "age": 21,
+    "address": None
+}
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'address': None}
+
+# 10. Dictionary with None Values
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": None
+}
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': None} 
+
+# 11. Dictionary with Nested Lists  
+
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": [1234567890, 9876543210]
+} 
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': [1234567890, 9876543210]}
+
+# 12. Dictionary with Nested Dictionaries
+
+data = {
+    "name": "John",
+    "age": 21,
+    "address": {
+        "street": "Main Street",
+        "city": "New York",
+        "country": "USA"
+    }
+}
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'address': {'street': 'Main Street', 'city': 'New York', 'country': 'USA'}}
+
+# 13. Dictionary with Nested Tuples
+
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": (1234567890, 9876543210)
+} 
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': (1234567890, 9876543210)}
+
+# 14. Dictionary with Nested Sets
+
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": {1234567890, 9876543210}
+}
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': {1234567890, 9876543210}}
+
+# 15. Dictionary with Nested Frozen Sets..
+
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": frozenset({1234567890, 9876543210})
+} 
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': frozenset({1234567890, 9876543210})}
+
+# 16. Dictionary with Nested Functions
+
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": lambda: 1234567890
+}
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': <function __main__.<lambda>()>}
+
+# 17. Dictionary with Nested Classes
+
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": Phone
+}
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': <class '__main__.Phone'>}
+
+# 18. Dictionary with Nested Modules
+
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": phone
+}
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': <module 'phone' from 'phone.py'>}
+
+# 19. Dictionary with Nested Iterables
+
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": [1234567890, 9876543210]
+}
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': [1234567890, 9876543210]}
+
+# 20. Dictionary with Nested Generators
+
+data = {
+    "name": "John",
+    "age": 21,
+    "phone": (1234567890, 9876543210)
+}
+
+print(data)  # Output: {'name': 'John', 'age': 21, 'phone': (1234567890, 9876543210)}
